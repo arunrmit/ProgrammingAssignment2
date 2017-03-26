@@ -48,7 +48,7 @@ ___________________________________________________________________________
     
     # The below function help to compute inverse matrix returned by makeCacheMatric
     # Actually this function check whether the mean is already created or not
-    #If it find out mean is already created, it skips the computation and provide the output.`
+    #If it find out mean is already created, it skips the computation and provide the output.
 
     cacheSolve <- function(x, ...) {
         ## Return a matrix that is the inverse of 'x'
