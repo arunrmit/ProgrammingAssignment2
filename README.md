@@ -30,7 +30,7 @@ really a list containing a function to
 4.  get the value of the mean
 
 __________________________________________________________________________________________________
-# Creating makeCacheMatrix function to set and get the value of vector.
+`# Creating makeCacheMatrix function to set and get the value of vector.
 #Also, to set and get the mean of vector
 
 makeCacheMatrix <- function(x = matrix()) {
@@ -46,9 +46,9 @@ makeCacheMatrix <- function(x = matrix()) {
              get = get,
              setInv = setInv, 
              getInv = getInv)
-}
+}`
 
-# The below function help to compute inverse matrix retuned by makeCacheMatric
+`# The below function help to compute inverse matrix retuned by makeCacheMatric
 # Actually this function check whether the mean is already is already created or not
 #If it find out mean is already created, it skips the computation and provide the output
 
@@ -63,7 +63,7 @@ cacheSolve <- function(x, ...) {
         invData <- solve(data,...)
         x$setInv(invData)
         invData     
-}
+}`
 ---------------------------------------------------------------------------------------------
 #Testing my function
 
@@ -73,16 +73,16 @@ cacheSolve <- function(x, ...) {
 #Calling cacheSolve function for the first time
 #Function is computing the value and returning the inverse matrix first time
 
-> cacheSolve(MyData)
+`> cacheSolve(MyData)
      [,1] [,2]
 [1,]   -2  1.5
-[2,]    1 -0.5
+[2,]    1 -0.5`
 
 #Calling the cacheSolve function again and this time it returning the value from the cache
 #with the message, instead of computing again
 
-> cacheSolve(MyData)
+`> cacheSolve(MyData)
 getting cached data
      [,1] [,2]
 [1,]   -2  1.5
-[2,]    1 -0.5
+[2,]    1 -0.5`
