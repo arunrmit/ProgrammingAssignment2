@@ -30,8 +30,8 @@ really a list containing a function to
 4.  get the value of the mean
 
 __________________________________________________________________________________________________
-`# Creating makeCacheMatrix function to set and get the value of vector.
-#Also, to set and get the mean of vector
+`# Creating makeCacheMatrix function to set and get the value of vector.`
+`#Also, to set and get the mean of vector`
 
 makeCacheMatrix <- function(x = matrix()) {
         invData <- NULL
@@ -76,7 +76,7 @@ cacheSolve <- function(x, ...) {
 `> cacheSolve(MyData)
      [,1] [,2]
 [1,]   -2  1.5
-[2,]    1 -0.5`
+[2,]    1 -0.5
 
 #Calling the cacheSolve function again and this time it returning the value from the cache
 #with the message, instead of computing again
